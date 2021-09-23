@@ -1,5 +1,5 @@
 img{
-    width: 100%;
+    width: 80%;
 }
 #header{
     color: #FFFFFF;
@@ -16,4 +16,27 @@ img{
     background-image:url("../assets/71r9aPTrZYL._AC_SL1000_.jpg");
     background-repeat:no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas:
+    "header header header header"
+    ". menu menu menu" ;    
+}
+#header{
+    grid-area: header;
+}
+#menu{
+    grid-area: menu;
+}
+
+.dish{
+    background-color: white;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 3rem;   
+}
+.dish, ul{
+    display: inline-block;
 }
