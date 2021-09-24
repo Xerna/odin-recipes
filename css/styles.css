@@ -1,5 +1,5 @@
 img{
-    width: 80%;
+    width: 100%;
 }
 #header{
     color: #FFFFFF;
@@ -17,11 +17,13 @@ img{
     background-repeat:no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0.5fr 1fr 1.5fr; 
     grid-template-areas:
     "header header header header"
-    ". menu menu menu" ;    
+    ". . . ."
+    ". menu menu menu"
+    ". . . .";  
 }
 #header{
     grid-area: header;
@@ -29,14 +31,19 @@ img{
 #menu{
     grid-area: menu;
 }
-
 .dish{
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
     background-color: white;
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    margin-top: 3rem;   
 }
-.dish, ul{
-    display: inline-block;
+#menubar{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.img-dish{
+ width: 80%;
 }
