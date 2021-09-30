@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(212, 212, 212);
+}
+#header{
+    font-size: 3rem;
+    text-align: center;
+}
+#main{
+    display: flex;
+    width: 80%;
+    height: 15rem;
+    margin: 5rem auto;
+    justify-content: space-between;
+}
+.welcome-img{
+    width: 18rem;
+    height: max-content;
+    align-self: baseline;
+}
+.dish{
+    height: 15rem;
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10%;
+}
+.dish-img{
+    width: 10rem;
+}
