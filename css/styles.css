@@ -12,6 +12,13 @@ body{
     margin: 5rem auto;
     justify-content: space-between;
 }
+#menu{
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    height: 15rem;
+    max-height: 15rem;
+}
 .welcome-img{
     width: 18rem;
     height: max-content;
@@ -20,11 +27,36 @@ body{
 .dish{
     height: 15rem;
     background-color: #FFFFFF;
-    display: inline-block;
     padding: 2rem;
     margin: 1rem;
     border-radius: 10%;
-}
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 0.5fr 1fr; 
+    gap: 2r; 
+    grid-template-areas: 
+    "img-dish"
+    "img-dish"
+    "dish-name"
+    "description"; 
+}    
+
 .dish-img{
+    grid-area: img-dish;
     width: 10rem;
+    align-self: center;
+}
+
+.dish-name{
+    grid-area: dish-name;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.description{
+    grid-area: description;
+    width: 10rem;
+    color: #888787;
+    text-align: justify;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
 }
