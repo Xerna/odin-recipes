@@ -1,19 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
 body{
-    background-color: rgb(212, 212, 212);
+    background: url(../assets/sylvain-sarrailh-tavern.jpg);
 }
 #header{
     font-size: 3rem;
     text-align: center;
+    color: white;
+    font-family: 'Skranji', cursive;
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 2rem auto;
+}
+.banner-tittle{
+    padding: 0.4rem 0;
 }
 #main{
     display: flex;
-    width: 80%;
-    height: 15rem;
-    margin: 5rem auto;
+    width: 85%;
+    height: 24rem;
+    margin: 3rem auto;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 8px 12px 31px -9px rgba(0,0,0,0.65);
+-webkit-box-shadow: 8px 12px 31px -9px rgba(0,0,0,0.65);
+-moz-box-shadow: 8px 12px 31px -9px rgba(0,0,0,0.65);
+border-radius: 2rem;
 }
 #menu{
-    margin-top: 1rem;
+    margin: 1rem 1rem;
     display: flex;
     align-items: flex-start;
     height: 15rem;
@@ -32,14 +46,29 @@ body{
     border-radius: 10%;
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 0.5fr 1fr; 
-    gap: 2r; 
+    grid-template-rows: 1fr 1fr 1.5fr 0.5fr 1.5fr 1fr;  
     grid-template-areas: 
     "img-dish"
     "img-dish"
+    "img-dish"
     "dish-name"
-    "description"; 
+    "description"
+    "recipe-btn"; 
+}
+.btn{
+    background-color:#ff4c4c;
+	border-radius:2rem;
+	cursor:pointer;
+	color:#ffffff;
+    border: none;
 }    
+.btn:hover{
+    background-color: #c03a3a;
+}
+.dish:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
 
 .dish-img{
     grid-area: img-dish;
