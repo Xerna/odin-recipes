@@ -89,3 +89,62 @@ border-radius: 2rem;
     margin-top: 0.5rem;
     font-size: 0.8rem;
 }
+.recipe{
+    color: #4e2d01;
+    font-family: 'Skranji', cursive;
+    width: 85%;
+    height: 24rem;
+    margin: 3rem auto;
+    background: url(../assets/papel-antiguo1.jpg);
+    background-size: cover;
+    opacity: 95%;
+    display: grid; 
+    grid-template-columns: 1fr 1.5fr; 
+    grid-template-rows: 0.5fr 1fr 1.5fr 1.5fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "recipe-img recipe-name"
+      "recipe-img recipe-description"
+      "recipe-img recipe-ingredients"
+      "recipe-img recipe-proccess"
+      "recipe-img buttons";       
+}
+.recipe-img { 
+    border-right: #4e2d01 3px solid;
+    grid-area: recipe-img;
+    margin: auto 2rem; 
+    width: 24rem;
+}
+.recipe-name {
+    grid-area: recipe-name;
+    font-size: 2rem; 
+    margin:1rem;
+}
+
+.recipe-description { 
+    grid-area: recipe-description;
+
+ }
+.recipe-ingredients { 
+    grid-area: recipe-ingredients;
+    list-style: inside; 
+}
+.recipe-proccess { 
+    grid-area: recipe-proccess;
+    list-style: decimal; 
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.buttons{ 
+    grid-area: buttons;
+    width: 3rem;
+    height: 1rem; 
+    background-color:#4e2d01;
+	border-radius:2.2rem;
+	cursor:pointer;
+    margin: 0 0 1rem 60%;
+    padding: 0.5rem 5rem;
+	text-decoration: none;
+}
