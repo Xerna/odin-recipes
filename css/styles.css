@@ -56,11 +56,16 @@ border-radius: 2rem;
     "recipe-btn"; 
 }
 .btn{
+    grid-area: recipe-btn;
+    width: 8rem;
+    height: 1rem; 
     background-color:#ff4c4c;
-	border-radius:2rem;
-	cursor:pointer;
-	color:#ffffff;
-    border: none;
+	border-radius:2.2rem;
+	cursor:pointer; 
+    padding: 0.5rem;
+    margin: 0 auto;
+	text-decoration: none;
+    text-align: center;
 }    
 .btn:hover{
     background-color: #c03a3a;
@@ -112,7 +117,7 @@ border-radius: 2rem;
 .recipe-img { 
     border-right: #4e2d01 3px solid;
     grid-area: recipe-img;
-    margin: auto 2rem; 
+    margin: auto auto; 
     width: 24rem;
 }
 .recipe-name {
